@@ -1,0 +1,15 @@
+#base_site.html
+
+{% extends "admin/base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+    {{ title }} | {% trans 'While42' %}
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'While42' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
